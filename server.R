@@ -6,7 +6,7 @@ data <- iris
 shinyServer(function(input, output) {
   # Creates plot
   output$chart <- renderPlotly({
-    build_chart(data, input$info, input$info2, input$obs, input$checkGroup)
+    build_chart(data, input$info1, input$info2, input$obs, input$checkGroup)
   })
   
 })
